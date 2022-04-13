@@ -9,7 +9,7 @@ export const HomePage = () => (
       <span className="title">LES DEVTOOLS</span>
       &mdash; ROMAIN LINSOLAS &mdash;
       <br />
-      @romaintaz
+      <i className="bi-twitter"/>@romaintaz
     </p>
   </div>
 );

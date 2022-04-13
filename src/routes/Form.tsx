@@ -44,7 +44,7 @@ const FormSection = ({ onMainActionClick }: Props) => {
 
   return (
     <div className="card m-5">
-      <div className="card-header display-6" style={{color: 'lightgray'}}>Formulaire d'inscription</div>
+      <div className="card-header display-6 bg-warning" style={{color: 'orange'}}>Formulaire d'inscription</div>
       <div className="card-body">
         <Formik
           initialValues={{
@@ -103,7 +103,7 @@ const FormSection = ({ onMainActionClick }: Props) => {
 
 const Done = ({ onMainActionClick }: Props) => (
   <div className="card m-5">
-    <div className="card-header" style={{color: 'lightgray'}}>Le formulaire</div>
+    <div className="card-header bg-success display-6 text-white">Inscription validée !</div>
     <div className="card-body">
       Merci ! ❤️
     </div>

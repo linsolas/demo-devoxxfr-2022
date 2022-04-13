@@ -7,21 +7,27 @@ export const Header = () => (
         <Link to="/" className="navbar-brand">Les DevTools</Link>
         <div className="navbar-expand-sm">
           <ul className="navbar-nav">
-            <li className="nav-item">
+            {/* <li className="nav-item">
               <Link to="/form" className="nav-link">Form</Link>
+            </li> */}
+            <span className="nav-item">
+              <Link to="/form" className="nav-link"><i className="bi-sliders"/> Form</Link>
+            </span>
+            <li className="nav-item">
+              <Link to="/flex" className="nav-link"><i className="bi-layout-wtf"/> Flex</Link>
             </li>
             <li className="nav-item">
-              <Link to="/flex" className="nav-link">Flex</Link>
+              <Link to="/console" className="nav-link"><i className="bi-terminal"/> Console</Link>
             </li>
             <li className="nav-item">
-              <Link to="/end" className="nav-link">End</Link>
+              <Link to="/end" className="nav-link"><i className="bi-infinity"/> End</Link>
             </li>
           </ul>
         </div>
       </div>
       <div className="text-white">
-        <img src="/logo.png" alt="Devoxx France 2022" width={'200px'} className="me-3 bg-white" />
-        <span>🐦 @romaintaz</span>
+        <img src="/logo.png" width={'200px'} className="me-3 bg-white" />
+        <span><i className="bi-twitter"/> @romaintaz</span>
       </div>
     </div>
   </nav>

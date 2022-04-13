@@ -4,6 +4,7 @@ import { HomePage } from './routes/Home';
 import { FormPage } from './routes/Form';
 import { FlexPage } from './routes/Flex';
 import { EndPage } from './routes/End';
+import { ConsolePage } from './routes/Console';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Route path="/" element={<HomePage/>}/>
         <Route path="/form" element={<FormPage/>}/>
         <Route path="/flex" element={<FlexPage/>}/>
+        <Route path="/console" element={<ConsolePage/>}/>
         <Route path="/end" element={<EndPage/>}/>
       </Routes>
     </BrowserRouter>
