@@ -5,7 +5,7 @@ export const FlexPage = () => (
     <div className="row g-3">
       {
         numbers.map((number: string, index: number) => (
-          <div className="col-3">
+          <div className="col-3" key={number}>
             <div className="p-3 border bg-white display-4">
               <span className="text-danger fw-bold">{index + 1}</span>
               <span

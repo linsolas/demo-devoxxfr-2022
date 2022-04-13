@@ -54,7 +54,7 @@ const FormSection = ({ onMainActionClick }: Props) => {
           onSubmit={submit}
         >
           {({ isSubmitting }) => (
-            <Form className="row g-3 flex-row-reverse">
+            <Form className="flex-row-reverse row">
               <div className="col-md-6">
                 <label htmlFor="password" className="form-label">Mot de passe</label>
                 <Field name="password" type="password" className="form-control" data-testid="my-password" />

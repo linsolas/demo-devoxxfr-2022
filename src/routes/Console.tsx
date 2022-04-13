@@ -1,30 +1,68 @@
 import { useEffect, useRef, useState } from "react";
+const romanize = (num: number) => {
+  const lookup: { [key: string]: number } = {
+    M: 1000, CM: 900, D: 500, CD: 400, C: 100, XC: 90, L: 50, XL: 40, X: 10, IX: 9, V: 5, IV: 4, I: 1
+  };
+  let roman = '';
+  for (let i in lookup) {
+    while ( num >= lookup[i] ) {
+      roman += i;
+      num -= lookup[i];
+    }
+  }
+  return roman;
+}
 
 export const ConsolePage = () => {
-  const [random, setRandom] = useState<number>(0);
+  const [random, setRandom] = useState<string>('?');
   const btn = useRef<HTMLButtonElement>(null);
   useEffect(() => {
-    const gogogo = () => setRandom(Math.floor(Math.random() * 100));
+    const ᱹᱹಠ_ಠᱹᱹ = () => setRandom(romanize(Math.floor(Math.random() * 100)));
     if (btn && btn.current) {
-      btn.current.addEventListener('click', gogogo);
+      btn.current.addEventListener('click', ᱹᱹಠ_ಠᱹᱹ);
     }
     return () => {
-      btn?.current?.removeEventListener('click', gogogo);
+      btn?.current?.removeEventListener('click', ᱹᱹಠ_ಠᱹᱹ);
     };
   }, [btn]);
+
 
   return (
     <div className="p-5">
       <h5 className="ms-3">La Console JavaScript</h5>
       <div className="container-fluid">
         <div className="row">
-          <div className="col">
-            <ul className="list-group">
-              <li className="list-group-item"><code>$</code></li>
-              <li className="list-group-item"><code>$$</code></li>
-              <li className="list-group-item"><code>$0</code></li>
-              <li className="list-group-item"><code>$_</code></li>
-            </ul>
+          <div className="col bg-white border">
+            <table className="table table-striped">
+              <thead>
+                <tr>
+                  <th>Fonction</th>
+                  <th>Description</th>
+                </tr>
+              </thead>
+              <tbody>
+              <tr>
+                  <td><code>$</code></td>
+                  <td><code>document.querySelector()</code></td>
+                </tr>
+                <tr>
+                  <td><code>$$</code></td>
+                  <td><code>document.querySelectorAll()</code></td>
+                </tr>
+                <tr>
+                  <td><code>$_</code></td>
+                  <td>Dernière évaluation</td>
+                </tr>
+                <tr>
+                  <td><code>$0</code>, <code>$1</code>...</td>
+                  <td>Derniers éléments inspectés</td>
+                </tr>
+                <tr>
+                  <td><kbd>Ctrl</kbd> + <kbd>L</kbd></td>
+                  <td>Vider la console</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
           <div className="col">
             <button id="clickme" ref={btn} className="btn btn-primary">

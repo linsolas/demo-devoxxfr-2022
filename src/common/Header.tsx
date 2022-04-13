@@ -7,19 +7,16 @@ export const Header = () => (
         <Link to="/" className="navbar-brand">Les DevTools</Link>
         <div className="navbar-expand-sm">
           <ul className="navbar-nav">
-            {/* <li className="nav-item">
-              <Link to="/form" className="nav-link">Form</Link>
-            </li> */}
-            <span className="nav-item">
+            <span className="nav-item mx-2">
               <Link to="/form" className="nav-link"><i className="bi-sliders"/> Form</Link>
             </span>
-            <li className="nav-item">
+            <li className="nav-item mx-2">
               <Link to="/flex" className="nav-link"><i className="bi-layout-wtf"/> Flex</Link>
             </li>
-            <li className="nav-item">
+            <li className="nav-item mx-2">
               <Link to="/console" className="nav-link"><i className="bi-terminal"/> Console</Link>
             </li>
-            <li className="nav-item">
+            <li className="nav-item mx-2">
               <Link to="/end" className="nav-link"><i className="bi-infinity"/> End</Link>
             </li>
           </ul>
