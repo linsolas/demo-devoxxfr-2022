@@ -30,7 +30,7 @@ export const ConsolePage = () => {
             <button id="clickme" ref={btn} className="btn btn-primary">
               <i className={`me-3 bi-dice-${Math.ceil(Math.random() * 6)}`}/> Nouveau lancé
             </button>
-            <div className="border mt-3 p-3 display-3 fw-bold text-center">
+            <div className="border mt-3 p-3 display-3 fw-bold text-center bg-white">
               {random}
             </div>
           </div>
