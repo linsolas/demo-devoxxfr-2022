@@ -90,7 +90,7 @@ const FormSection = ({ onMainActionClick }: Props) => {
 
               <div className="col-12">
                 <button type="submit" className="btn btn-primary float-end" disabled={isSubmitting}>
-                  S'enregitrer
+                  S'enregistrer
                 </button>
               </div>
             </Form>
