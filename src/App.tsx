@@ -8,7 +8,7 @@ import { ConsolePage } from './routes/Console';
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Header/>
       <Routes>
         <Route path="/" element={<HomePage/>}/>
