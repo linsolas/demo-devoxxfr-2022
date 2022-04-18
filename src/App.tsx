@@ -9,18 +9,15 @@ import { ConsolePage } from './routes/Console';
 export const App = () => {
   console.log('App', process.env.PUBLIC_URL);
   return (
-    <>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Header/>
-      <BrowserRouter basename={process.env.PUBLIC_URL}>
-        <Routes>
-          <Route index element={<HomePage/>}/>
-          <Route path="/form" element={<FormPage/>}/>
-          <Route path="/flex" element={<FlexPage/>}/>
-          <Route path="/console" element={<ConsolePage/>}/>
-          <Route path="/end" element={<EndPage/>}/>
-          <Route path="*" element={<HomePage/>}/>
-        </Routes>
-      </BrowserRouter>
-    </>
+      <Routes>
+        <Route path="/" element={<HomePage/>}/>
+        <Route path="/form" element={<FormPage/>}/>
+        <Route path="/flex" element={<FlexPage/>}/>
+        <Route path="/console" element={<ConsolePage/>}/>
+        <Route path="/end" element={<EndPage/>}/>
+      </Routes>
+    </BrowserRouter>
   );
 }
