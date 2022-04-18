@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "https://linsolas.github.io/demo-devoxxfr-2022/static/css/main.6914a320.css",
-    "main.js": "https://linsolas.github.io/demo-devoxxfr-2022/static/js/main.62382435.js",
+    "main.js": "https://linsolas.github.io/demo-devoxxfr-2022/static/js/main.05d25729.js",
     "static/media/devoxx2022.png": "https://linsolas.github.io/demo-devoxxfr-2022/static/media/devoxx2022.4553440ede084c6c6297.png",
     "index.html": "https://linsolas.github.io/demo-devoxxfr-2022/index.html",
     "main.6914a320.css.map": "https://linsolas.github.io/demo-devoxxfr-2022/static/css/main.6914a320.css.map",
-    "main.62382435.js.map": "https://linsolas.github.io/demo-devoxxfr-2022/static/js/main.62382435.js.map"
+    "main.05d25729.js.map": "https://linsolas.github.io/demo-devoxxfr-2022/static/js/main.05d25729.js.map"
   },
   "entrypoints": [
     "static/css/main.6914a320.css",
-    "static/js/main.62382435.js"
+    "static/js/main.05d25729.js"
   ]
 }
