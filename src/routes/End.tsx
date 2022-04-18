@@ -37,6 +37,7 @@ export const EndPage = () => (
               style={{ marginLeft: '-3px'}}
               href="https://developer.chrome.com/docs/devtools/"
               target="_blank"
+              rel="noreferrer"
             >
               https://developer.chrome.com/docs/devtools/
             </a>
@@ -50,6 +51,7 @@ export const EndPage = () => (
               style={{ marginLeft: '-3px'}}
               href="https://developer.chrome.com/blog/"
               target="_blank"
+              rel="noreferrer"
             >
               https://developer.chrome.com/blog/
             </a>

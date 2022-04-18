@@ -6,18 +6,15 @@ import { FlexPage } from './routes/Flex';
 import { EndPage } from './routes/End';
 import { ConsolePage } from './routes/Console';
 
-export const App = () => {
-  console.log('App', process.env.PUBLIC_URL);
-  return (
-    <BrowserRouter basename={process.env.PUBLIC_URL}>
-      <Header/>
-      <Routes>
-        <Route path="/" element={<HomePage/>}/>
-        <Route path="/form" element={<FormPage/>}/>
-        <Route path="/flex" element={<FlexPage/>}/>
-        <Route path="/console" element={<ConsolePage/>}/>
-        <Route path="/end" element={<EndPage/>}/>
-      </Routes>
-    </BrowserRouter>
-  );
-}
+export const App = () => (
+  <BrowserRouter basename={process.env.PUBLIC_URL}>
+    <Header/>
+    <Routes>
+      <Route path="" element={<HomePage/>}/>
+      <Route path="/form" element={<FormPage/>}/>
+      <Route path="/flex" element={<FlexPage/>}/>
+      <Route path="/console" element={<ConsolePage/>}/>
+      <Route path="/end" element={<EndPage/>}/>
+    </Routes>
+  </BrowserRouter>
+);
