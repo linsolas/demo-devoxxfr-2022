@@ -1,4 +1,7 @@
-export const HomePage = () => (
+console.log('Home file');
+export const HomePage = () => {
+  console.log('HOMEPAGE Component');
+  return (
   <>
     <div className="homepage d-flex align-items-center justify-content-center flex-column">
       <p className="p-2">
@@ -21,3 +24,5 @@ export const HomePage = () => (
     </div>
   </>
 );
+  };
+  
