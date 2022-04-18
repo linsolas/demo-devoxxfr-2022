@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.23721fb8.css",
+    "main.js": "/static/js/main.09df2b95.js",
+    "static/js/787.5d944677.chunk.js": "/static/js/787.5d944677.chunk.js",
+    "static/media/devoxx2022.png": "/static/media/devoxx2022.4553440ede084c6c6297.png",
+    "index.html": "/index.html",
+    "main.23721fb8.css.map": "/static/css/main.23721fb8.css.map",
+    "main.09df2b95.js.map": "/static/js/main.09df2b95.js.map",
+    "787.5d944677.chunk.js.map": "/static/js/787.5d944677.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.23721fb8.css",
+    "static/js/main.09df2b95.js"
+  ]
+}
