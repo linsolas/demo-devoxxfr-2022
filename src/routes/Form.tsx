@@ -55,23 +55,23 @@ const FormSection = ({ onMainActionClick }: Props) => {
         >
           {({ isSubmitting }) => (
             <Form className="flex-row-reverse row">
-              <div className="col-md-6">
+              <div className="col-md-6 mt-2">
                 <label htmlFor="password" className="form-label">Mot de passe</label>
                 <Field name="password" type="password" className="form-control" data-testid="my-password" />
                 <ErrorMessage name="password" component="div" className="text-danger"/>
               </div>
-              <div className="col-md-6">
+              <div className="col-md-6 mt-2">
                 <label htmlFor="mail" className="form-label">Email</label>
                 <Field name="mail" type="email" className="form-control" placeholder="john@doe.com" data-testid="my-email" />
                 <ErrorMessage name="mail" component="div" className="text-danger"/>
               </div>
 
-              <div className="col-12">
+              <div className="col-12 mt-2">
                 <label htmlFor="address" className="form-label">Adresse</label>
                 <Field name="address" type="text" className="form-control" placeholder="102 Missilfix"/>
               </div>
 
-              <div className="col-md-4">
+              <div className="col-md-4 mt-2">
                 <label htmlFor="country" className="form-label">Pays</label>
                 <Field as="select" name="country" type="text" className="form-control" placeholder="France">
                   <option value="France">🇫🇷 France</option>
@@ -79,16 +79,16 @@ const FormSection = ({ onMainActionClick }: Props) => {
                   <option value="Ailleurs">🌏 Ailleurs</option>
                 </Field>
               </div>
-              <div className="col-md-2">
+              <div className="col-md-2 mt-2">
                 <label htmlFor="zip" className="form-label">Code postal</label>
                 <Field name="zip" type="text" className="form-control" placeholder="12345" />
               </div>
-              <div className="col-md-6">
+              <div className="col-md-6 mt-2">
                 <label htmlFor="city" className="form-label">Ville</label>
                 <Field name="city" type="text" className="form-control" placeholder="🗽 Bastia" />
               </div>
 
-              <div className="col-12">
+              <div className="col-12 mt-2">
                 <button type="submit" className="btn btn-primary float-end" disabled={isSubmitting}>
                   S'enregistrer
                 </button>
