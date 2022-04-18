@@ -6,10 +6,10 @@ import { FlexPage } from './routes/Flex';
 import { EndPage } from './routes/End';
 import { ConsolePage } from './routes/Console';
 
-function App() {
+export const App = () => {
   console.log('App', process.env.PUBLIC_URL);
   return (
-    <BrowserRouter basename={process.env.PUBLIC_URL}>
+    <BrowserRouter basename={process.env.PUBLIC_URL + '/'}>
       <Header/>
       <Routes>
         <Route index element={<HomePage/>}/>
@@ -22,5 +22,3 @@ function App() {
     </BrowserRouter>
   );
 }
-
-export default App;
