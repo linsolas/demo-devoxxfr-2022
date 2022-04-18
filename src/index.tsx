@@ -3,12 +3,15 @@ import './index.scss';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import React from 'react';
+import { BrowserRouter } from 'react-router-dom';
 
 const root = createRoot(document.getElementById('root')!);
 
 root.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
+      <App />
+    </BrowserRouter>
   </React.StrictMode>,
 );
 
