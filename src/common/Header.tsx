@@ -23,7 +23,7 @@ export const Header = () => (
         </div>
       </div>
       <div className="text-white">
-        <img src="/logo.png" width={'200px'} className="me-3 bg-white" />
+        <img src={process.env.PUBLIC_URL + '/logo.png'} width={'200px'} className="me-3 bg-white" />
         <span><i className="bi-twitter"/> @romaintaz</span>
       </div>
     </div>

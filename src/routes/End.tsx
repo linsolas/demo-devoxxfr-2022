@@ -29,8 +29,8 @@ export const EndPage = () => (
       </div>
 
       <div className="row my-5">
-        <div className="col-6">
-          <div className="p-3 border bg-white" style={{fontSize: '1.5rem'}}>
+        <div className="col-12">
+          <div className="p-3 border border-bottom-0 bg-white" style={{fontSize: '1.5rem'}}>
             <span className="text-danger fw-bold">DOC</span>
             <a
               className="border-start border-2 ps-2 bg-white"
@@ -42,7 +42,7 @@ export const EndPage = () => (
             </a>
           </div>
         </div>
-        <div className="col-6">
+        <div className="col-12">
           <div className="p-3 border bg-white" style={{fontSize: '1.5rem'}}>
             <span className="text-danger fw-bold">BLOG</span>
             <a
