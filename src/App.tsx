@@ -1,4 +1,4 @@
-import { Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { Header } from './common/Header';
 import { HomePage } from './routes/Home';
 import { FormPage } from './routes/Form';
@@ -9,7 +9,7 @@ import { ConsolePage } from './routes/Console';
 function App() {
   console.log('App', process.env.PUBLIC_URL);
   return (
-    <>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Header/>
       <Routes>
         <Route index element={<HomePage/>}/>
@@ -19,7 +19,7 @@ function App() {
         <Route path="/end" element={<EndPage/>}/>
         <Route path="*" element={<HomePage/>}/>
       </Routes>
-    </>
+    </BrowserRouter>
   );
 }
 
