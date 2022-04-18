@@ -11,7 +11,7 @@ function App() {
     <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Header/>
       <Routes>
-        <Route path="/" element={<HomePage/>}/>
+        <Route index element={<HomePage/>}/>
         <Route path="/form" element={<FormPage/>}/>
         <Route path="/flex" element={<FlexPage/>}/>
         <Route path="/console" element={<ConsolePage/>}/>
