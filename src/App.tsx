@@ -7,6 +7,7 @@ import { EndPage } from './routes/End';
 import { ConsolePage } from './routes/Console';
 
 function App() {
+  console.log('App', process.env.PUBLIC_URL);
   return (
     <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Header/>
