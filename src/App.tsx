@@ -17,6 +17,7 @@ function App() {
         <Route path="/flex" element={<FlexPage/>}/>
         <Route path="/console" element={<ConsolePage/>}/>
         <Route path="/end" element={<EndPage/>}/>
+        <Route path="*" element={<HomePage/>}/>
       </Routes>
     </BrowserRouter>
   );
