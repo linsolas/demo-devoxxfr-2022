@@ -28,6 +28,7 @@ export const App = () => (
       <Route path="/console" element={<ConsolePage/>}/>
       <Route path="/end" element={<EndPage/>}/>
       <Route path="*" element={<HomePage/>}/>
+      <Route path={process.env.PUBLIC_URL} element={<HomePage/>}/>
     </Routes>
   </BrowserRouter>
 );
