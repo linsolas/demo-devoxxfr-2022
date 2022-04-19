@@ -10,12 +10,12 @@ const unseen = [
 ];
 
 export const EndPage = () => (
-  <div className="p-5">
+  <div className="p-3">
     <div className="container-fluid">
       <div className="row g-3">
         {unseen.map((item: string, index: number) => (
           <div className="col-3" key={item}>
-            <div className="p-3 border bg-white" style={{fontSize: '1.5rem'}}>
+            <div className="p-3 border bg-white">
               <span className="text-danger fw-bold">{index + 1}</span>
               <span
                 className="border-start border-2 ps-2 bg-white"

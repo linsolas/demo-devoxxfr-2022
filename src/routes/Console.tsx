@@ -28,7 +28,7 @@ export const ConsolePage = () => {
 
 
   return (
-    <div className="p-5">
+    <div className="p-3">
       <h5 className="ms-3">La Console JavaScript</h5>
       <div className="container-fluid">
         <div className="row">

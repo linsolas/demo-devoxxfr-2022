@@ -1,7 +1,7 @@
 const numbers = ['Un', 'Deux', 'Trois', 'Quatre', 'Cinq', 'Six', 'Sept', 'Huit'];
 
 export const FlexPage = () => (
-  <div className="d-flex m-5 container">
+  <div className="d-flex m-3 container">
     <div className="row g-3">
       {
         numbers.map((number: string, index: number) => (

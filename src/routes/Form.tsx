@@ -5,25 +5,7 @@ interface Props {
   onMainActionClick: () => void;
 }
 
-// interface FormValues {
-//   mail: string;
-//   password: string;
-//   address: string;
-//   city: string;
-//   zip: string;
-//   country: string;
-// }
-
 const FormSection = ({ onMainActionClick }: Props) => {
-  // const [formValues, setFormValues] = useState<FormValues>({
-  //   mail: "",
-  //   password: "",
-  //   address: "",
-  //   city: "",
-  //   zip: "",
-  //   country: ""
-  // });
-
   const validateForm = (values: any) => {
     const errors: any = {};
     if (!values.mail) {
@@ -43,7 +25,7 @@ const FormSection = ({ onMainActionClick }: Props) => {
   };
 
   return (
-    <div className="card m-5">
+    <div className="card m-3">
       <div className="card-header display-6 bg-warning" style={{color: 'orange'}}>Formulaire d'inscription</div>
       <div className="card-body">
         <Formik
