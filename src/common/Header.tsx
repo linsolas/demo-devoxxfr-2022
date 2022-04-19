@@ -4,14 +4,14 @@ export const Header = () => (
   <nav className="navbar navbar-dark bg-dark navbar-expand-sm">
     <div className="container-fluid">
       <div className="d-flex">
-        <Link to="/" className="navbar-brand">Les DevTools</Link>
+        <Link to={process.env.PUBLIC_URL} className="navbar-brand">Les DevTools</Link>
         <div className="navbar-expand-sm">
           <ul className="navbar-nav">
             <span className="nav-item mx-2">
-              <Link to="/form" className="nav-link"><i className="bi-sliders"/> Form</Link>
+              <Link to={process.env.PUBLIC_URL + '/form'} className="nav-link"><i className="bi-sliders"/> Form</Link>
             </span>
             <li className="nav-item mx-2">
-              <Link to="/flex" className="nav-link"><i className="bi-layout-wtf"/> Flex</Link>
+              <Link to={process.env.PUBLIC_URL + '/flex'} className="nav-link"><i className="bi-layout-wtf"/> Flex</Link>
             </li>
             <li className="nav-item mx-2">
               <Link to="/console" className="nav-link"><i className="bi-terminal"/> Console</Link>
