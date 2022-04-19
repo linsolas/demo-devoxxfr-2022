@@ -7,6 +7,8 @@ import { EndPage } from './routes/End';
 import { ConsolePage } from './routes/Console';
 
 export const App = () => (
+  <>
+  <h1>Before: {process.env.PUBLIC_URL}</h1>
   <BrowserRouter basename={process.env.PUBLIC_URL}>
     <Header/>
     <Routes>
@@ -17,4 +19,6 @@ export const App = () => (
       <Route path="*" element={<HomePage/>}/>
     </Routes>
   </BrowserRouter>
+  <h2>After</h2>
+  </>
 );
