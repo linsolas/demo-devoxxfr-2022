@@ -2,9 +2,9 @@ const unseen = [
   'Mémoire',
   'Application',
   'Debug',
-  'Android debugging',
-  'Animations',
   'Network',
+  'Animations',
+  'Android debugging',
   'Configuration synchronisée',
   'etc.'
 ];
@@ -12,7 +12,7 @@ const unseen = [
 export const EndPage = () => (
   <div className="p-3">
     <div className="container-fluid">
-      <div className="row g-3">
+      <div className="row g-1">
         {unseen.map((item: string, index: number) => (
           <div className="col-3" key={item}>
             <div className="p-3 border bg-white">
@@ -28,7 +28,7 @@ export const EndPage = () => (
         ))}
       </div>
 
-      <div className="row my-5">
+      <div className="row my-3">
         <div className="col-12">
           <div className="p-3 border border-bottom-0 bg-white" style={{fontSize: '1.5rem'}}>
             <span className="text-danger fw-bold">DOC</span>

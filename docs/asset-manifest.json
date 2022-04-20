@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/devoxxfr-2022/static/css/main.61c63094.css",
-    "main.js": "/devoxxfr-2022/static/js/main.57a19142.js",
+    "main.js": "/devoxxfr-2022/static/js/main.b7d95c09.js",
     "static/media/devoxx2022.png": "/devoxxfr-2022/static/media/devoxx2022.4553440ede084c6c6297.png",
     "index.html": "/devoxxfr-2022/index.html",
     "main.61c63094.css.map": "/devoxxfr-2022/static/css/main.61c63094.css.map",
-    "main.57a19142.js.map": "/devoxxfr-2022/static/js/main.57a19142.js.map"
+    "main.b7d95c09.js.map": "/devoxxfr-2022/static/js/main.b7d95c09.js.map"
   },
   "entrypoints": [
     "static/css/main.61c63094.css",
-    "static/js/main.57a19142.js"
+    "static/js/main.b7d95c09.js"
   ]
 }

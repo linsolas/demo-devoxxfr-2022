@@ -32,8 +32,8 @@ export const ConsolePage = () => {
       <h5 className="ms-3">La Console JavaScript</h5>
       <div className="container-fluid">
         <div className="row">
-          <div className="col bg-white border">
-            <table className="table table-striped">
+          <div className="col-md-12 col-lg-6  mb-3">
+            <table className="table table-striped table-bordered bg-white">
               <thead>
                 <tr>
                   <th>Fonction</th>
@@ -64,7 +64,7 @@ export const ConsolePage = () => {
               </tbody>
             </table>
           </div>
-          <div className="col">
+          <div className="col-md-12 col-lg-6">
             <button id="clickme" ref={btn} className="btn btn-primary">
               <i className={`me-3 bi-dice-${Math.ceil(Math.random() * 6)}`}/> Nouveau lancé
             </button>

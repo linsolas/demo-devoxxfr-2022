@@ -36,16 +36,17 @@ const FormSection = ({ onMainActionClick }: Props) => {
           onSubmit={submit}
         >
           {({ isSubmitting }) => (
-            <Form className="flex-row-reverse row">
-              <div className="col-md-6 mt-2">
-                <label htmlFor="password" className="form-label">Mot de passe</label>
-                <Field name="password" type="password" className="form-control" data-testid="my-password" />
-                <ErrorMessage name="password" component="div" className="text-danger"/>
-              </div>
+            <Form className="row">
               <div className="col-md-6 mt-2">
                 <label htmlFor="mail" className="form-label">Email</label>
                 <Field name="mail" type="email" className="form-control" placeholder="john@doe.com" data-testid="my-email" />
                 <ErrorMessage name="mail" component="div" className="text-danger"/>
+              </div>
+
+              <div className="col-md-6 mt-2">
+                <label htmlFor="password" className="form-label">Mot de passe</label>
+                <Field name="password" type="password" className="form-control" data-testid="my-password" />
+                <ErrorMessage name="password" component="div" className="text-danger"/>
               </div>
 
               <div className="col-12 mt-2">
