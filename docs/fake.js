@@ -6,4 +6,4 @@
 // console.log('Finito');
 
 console.log("%cTOUR D'HORIZON DES DEVTOOLS", "color: white; background: black; font-size: 50px");
-console.log("%cDevoxx France 2022 - 🐤 @romaintaz", "color: #2469ff; font-size: 30px");
+console.log("%cDevoxx France 2022 + BBL - 🐤 @romaintaz", "color: #2469ff; font-size: 30px");
